@@ -1,5 +1,16 @@
 body {
-    background-color: black;
+    /*Ausencia de color es negro*/
+    background-color: #000000;
     /*Color de partes textuales y decorativas del elemento*/
-    color: white;
+    color: #F6F6F6;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+span {
+    color: #22D4FD;
+    border: 1px solid currentColor;
+    padding: 10px;
 }
