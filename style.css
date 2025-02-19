@@ -1,16 +1,24 @@
+/*Reset básico útil para proyectos pequeños*/
+* {
+    padding: 0;
+    margin: 0;
+}
+
 body {
     /*Ausencia de color es negro*/
     background-color: #000000;
     /*Color de partes textuales y decorativas del elemento*/
     color: #F6F6F6;
+    /*hacer que el elemento ocupe el 100% de la altura de la ventana de visualización (viewport) del navegador.*/
+    height: 100vh;/*(viewport height)*/
+    /* box-sizing: border-box; */
 }
 
-h1 {
-    font-weight: bold;
-}
-
-span {
+.titulo-destacado {
     color: #22D4FD;
-    border: 1px solid currentColor;
-    padding: 10px;
+}
+
+.presentacion {
+    display: flex;/*Por default deja el 'flex-direction: row', es decir, deja los hijos en línea horizontalmente*/
+    align-items: center;/*Es como el justify-content pero perpendicular al eje principal. Centra los elementos verticalmente teniendo como referencia el elemento más alto*/
 }
