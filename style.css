@@ -11,7 +11,7 @@ body {
     color: #F6F6F6;
     /*hacer que el elemento ocupe el 100% de la altura de la ventana de visualización (viewport) del navegador.*/
     height: 100vh;/*(viewport height)*/
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
 }
 
 .titulo-destacado {
@@ -19,6 +19,6 @@ body {
 }
 
 .presentacion {
-    display: flex;/*Por default deja el 'flex-direction: row', es decir, deja los hijos en línea horizontalmente*/
-    align-items: center;/*Es como el justify-content pero perpendicular al eje principal. Centra los elementos verticalmente teniendo como referencia el elemento más alto*/
+    display: flex; /*Por default deja el 'flex-direction: row', es decir, deja los hijos en línea horizontalmente*/
+    align-items: center; /*Es como el justify-content pero perpendicular al eje principal. Centra los elementos verticalmente teniendo como referencia el elemento más alto*/
 }
