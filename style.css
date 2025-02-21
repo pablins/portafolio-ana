@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 /*Reset básico útil para proyectos pequeños*/
 * {
     padding: 0;
@@ -23,4 +25,19 @@ body {
     align-items: center; /*Es como el justify-content pero perpendicular al eje principal. Centra los elementos verticalmente teniendo como referencia el elemento más alto*/
     margin: 5%;/*espacio afuera*/
     justify-content: space-between;/*para separar el texto de la imagen*/
+}
+
+.presentacion__contenido {
+    width: 615px;/*esto lo obtenemos de Figma. Del Layout W*/
+}
+
+.presentacion__contenido__titulo {
+    font-size: 36px;
+    font-family: "Krona One", serif;
+}
+
+.presentacion__contenido__texto {
+    font-family: "Montserrat", serif;
+    font-size: 24px;
+    font-weight: 400;
 }
