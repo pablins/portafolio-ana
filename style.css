@@ -23,12 +23,16 @@ body {
 .presentacion {
     display: flex; /*Por default deja el 'flex-direction: row', es decir, deja los hijos en línea horizontalmente*/
     align-items: center; /*Es como el justify-content pero perpendicular al eje principal. Centra los elementos verticalmente teniendo como referencia el elemento más alto*/
-    margin: 10%;/*espacio afuera*/
+    margin: 10% 15%;/*espacio afuera*/
     justify-content: space-between;/*para separar el texto de la imagen*/
 }
 
 .presentacion__contenido {
     width: 615px;/*esto lo obtenemos de Figma. Del Layout W*/
+    /*Agregamos espacio vertical con gap de Flexbox*/
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
 
 .presentacion__contenido__titulo {
@@ -45,7 +49,6 @@ body {
 .presentacion__enlaces {
     display: flex;
     justify-content: space-between;
-    margin-top: 24px;
 }
 
 .presentacion_enlaces_link {
