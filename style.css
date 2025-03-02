@@ -23,7 +23,7 @@ body {
 .presentacion {
     display: flex; /*Por default deja el 'flex-direction: row', es decir, deja los hijos en línea horizontalmente*/
     align-items: center; /*Es como el justify-content pero perpendicular al eje principal. Centra los elementos verticalmente teniendo como referencia el elemento más alto*/
-    margin: 5%;/*espacio afuera*/
+    margin: 10%;/*espacio afuera*/
     justify-content: space-between;/*para separar el texto de la imagen*/
 }
 
@@ -33,11 +33,11 @@ body {
 
 .presentacion__contenido__titulo {
     font-size: 36px;
-    font-family: "Krona One", serif;
+    font-family: "Krona One", sans-serif;
 }
 
 .presentacion__contenido__texto {
-    font-family: "Montserrat", serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 24px;
     font-weight: 400;
 }
