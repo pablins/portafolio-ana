@@ -64,3 +64,10 @@ body {
     text-decoration: none;/*Quita el underline*/
     color: #000000;
 }
+
+.presentacion__figura__caption {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-style: italic;
+}
