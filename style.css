@@ -73,6 +73,12 @@ body {
     text-decoration: none;/*Quita el underline*/
     color: #F6F6F6;
     border: 2px solid #22D4FD;
+
+    /*propiedades para posicionar el icono y el texto del enlace*/
+    display: flex;
+    justify-content: center;/*lo utilizamos porque estamos en el eje horizontal*/
+    gap: 16px;
+    align-items: center;
 }
 
 .presentacion__figura__caption {
