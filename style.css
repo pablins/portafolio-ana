@@ -98,3 +98,12 @@ body {
     font-size: 16px;
     font-style: italic;
 }
+
+.footer {
+    background-color: #22D4FD;
+    padding: 23.64px;/*Tomamos el valor que había en Figma*/
+    color: #000000;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+}
