@@ -12,20 +12,39 @@ body {
     /*Color de partes textuales y decorativas del elemento*/
     color: #F6F6F6;
     /*hacer que el elemento ocupe el 100% de la altura de la ventana de visualización (viewport) del navegador.*/
-    height: 100vh;/*(viewport height)*/
+    /*Teniendo en cuenta que ya tenemos más contenido vertical ya no necesitaremos este height*/
+    /*height: 100vh;*//*(viewport height)*/
     box-sizing: border-box;
     /*Tipografía generamente usada*/
     font-family: "Montserrat", sans-serif;
 }
 
-.titulo-destacado {
+.header {
+    margin: 2% 15%;
+}
+
+.header__menu_container {
+    display: flex;
+    gap: 80px;
+    list-style: none;/*quita las viñetas de los <li>*/
+}
+
+.header__menu__link {
+    text-decoration: none;/*quita el underline de los enlaces*/
+    font-size: 24px;
+    font-weight: 700;
     color: #22D4FD;
+    padding: 5px 10px;
+}
+
+.header__menu__link:hover {
+    color: #10a0c0;
 }
 
 .presentacion {
     display: flex; /*Por default deja el 'flex-direction: row', es decir, deja los hijos en línea horizontalmente*/
     align-items: center; /*Es como el justify-content pero perpendicular al eje principal. Centra los elementos verticalmente teniendo como referencia el elemento más alto*/
-    margin: 10% 15%;/*espacio afuera*/
+    margin: 7% 15%;/*espacio afuera*/
     justify-content: space-between;/*para separar el texto de la imagen*/
 }
 
@@ -40,6 +59,10 @@ body {
 .presentacion__contenido__titulo {
     font-size: 36px;
     font-family: "Krona One", sans-serif;
+}
+
+.titulo-destacado {
+    color: #22D4FD;
 }
 
 .presentacion__contenido__texto {
