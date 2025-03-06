@@ -1,5 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+/*
+DECLARACIÓN VARIABLES 
+-Las variables que declaramos siempre inician por: --
+-Para utilizar las variables lo hacemos usando la función "var( <--COLOCAMOS_NOMBRE_VARIABLE> )"
+*/
+:root {/*corresponde al alcance global*/
+    /*Colores*/
+    /*Podemos usar Color hunt" o cualquier sitio de paleta de colores para cambiar a nuestro gusto el sitio web solo modificando estas variables*/
+    /*PALETA COLOR 1*/
+    --color-primario: #000000;/*corresponde al color de fondo*/
+    --color-secundario: #F6F6F6;/*corresponde al color como blanco usado especialmente en los textos*/
+    --color-terciario: #22D4FD;/*Corresponde al color usado especialmente en los títulos*/
+    --color-hover: #272727;/*color usado en el hover de los enlaces a redes sociales*/
+
+    /*PALETA COLOR 2*/
+    --color-primario: #FFF2F2;/*corresponde al color de fondo*/
+    --color-secundario: #A9B5DF;/*corresponde al color como blanco usado especialmente en los textos*/
+    --color-terciario: #7886C7;/*Corresponde al color usado especialmente en los títulos*/
+    --color-hover: #2D336B;/*color usado en el hover de los enlaces a redes sociales*/
+
+    /*Fuentes tipográficas*/
+    --fuente-montserrat: "Montserrat", sans-serif;
+    --fuente-krona: "Krona One", sans-serif;
+
+}
+
 /*Reset básico útil para proyectos pequeños*/
 * {
     padding: 0;
@@ -8,15 +34,15 @@
 
 body {
     /*Ausencia de color es negro*/
-    background-color: #000000;
+    background-color: var(--color-primario);
     /*Color de partes textuales y decorativas del elemento*/
-    color: #F6F6F6;
+    color: var(--color-secundario);
     /*hacer que el elemento ocupe el 100% de la altura de la ventana de visualización (viewport) del navegador.*/
     /*Teniendo en cuenta que ya tenemos más contenido vertical ya no necesitaremos este height*/
     /*height: 100vh;*//*(viewport height)*/
     box-sizing: border-box;
     /*Tipografía generamente usada*/
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--fuente-montserrat);
 }
 
 .header {
@@ -33,7 +59,7 @@ body {
     text-decoration: none;/*quita el underline de los enlaces*/
     font-size: 24px;
     font-weight: 700;
-    color: #22D4FD;
+    color: var(--color-terciario);
     padding: 5px 10px;
 }
 
@@ -58,16 +84,21 @@ body {
 
 .presentacion__contenido__titulo {
     font-size: 36px;
-    font-family: "Krona One", sans-serif;
+    font-family: var(--fuente-krona);
 }
 
 .titulo-destacado {
-    color: #22D4FD;
+    color: var(--color-terciario);
 }
 
 .presentacion__contenido__texto {
     font-size: 24px;
     font-weight: 400;
+}
+
+.presentacion__contenido__texto a {
+    text-decoration: none;
+    color: var(--color-terciario);
 }
 
 .presentacion__contenido__texto--tamanio:hover {
@@ -85,7 +116,7 @@ body {
 }
 
 .presentacion__enlaces__subtitulo {
-    font-family: "Krona One", sans-serif;
+    font-family: var(--fuente-krona);
     font-size: 24px;/*Ya lo heredaba por el h2 del user agent (en Chrome)*/
     font-weight: 400;/*En el figma aparece 'Regular'*/
 }
@@ -99,8 +130,8 @@ body {
     font-weight: 600;/*Corresponde a SemiBold (semi-negrita) en Figma*/
     padding: 21.5px 0;/*No agregaremos relleno horizontal*/
     text-decoration: none;/*Quita el underline*/
-    color: #F6F6F6;
-    border: 2px solid #22D4FD;
+    color: var(--color-secundario);
+    border: 2px solid var(--color-terciario);
 
     /*propiedades para posicionar el icono y el texto del enlace*/
     display: flex;
@@ -112,7 +143,7 @@ body {
 /* hover - Esta propiedad cambia el aspecto del boton cuando posicionamos sobre el */
 .presentacion__enlaces__link:hover {
     /*En el diseño de Figma, el diseñador establecio que al pasar el mouse se debía agregar un background color*/
-    background-color: #272727;
+    background-color: var(--color-hover);
     padding: 3.5%;
 }
 
@@ -123,9 +154,9 @@ body {
 }
 
 .footer {
-    background-color: #22D4FD;
+    background-color: var(--color-terciario);
     padding: 23.64px;/*Tomamos el valor que había en Figma*/
-    color: #000000;
+    color: var(--color-primario);
     text-align: center;
     font-size: 24px;
     font-weight: 400;
