@@ -47,6 +47,11 @@ body {
     font-weight: 400;
 }
 
+.presentacion__contenido__texto--tamanio:hover {
+    font-size: 22px;
+    font-weight: 700;
+}
+
 .presentacion__enlaces {
     display: flex;
     /*Al cambiar el flex-direction, cambiamos el eje de nuestros botones. Con el row el eje es horizontal, con el column el eje es vertical*/
@@ -79,6 +84,13 @@ body {
     justify-content: center;/*lo utilizamos porque estamos en el eje horizontal*/
     gap: 16px;
     align-items: center;
+}
+
+/* hover - Esta propiedad cambia el aspecto del boton cuando posicionamos sobre el */
+.presentacion__enlaces__link:hover {
+    /*En el diseño de Figma, el diseñador establecio que al pasar el mouse se debía agregar un background color*/
+    background-color: #272727;
+    padding: 3.5%;
 }
 
 .presentacion__figura__caption {
