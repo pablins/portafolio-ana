@@ -32,6 +32,10 @@ DECLARACIÓN VARIABLES
     margin: 0;
 }
 
+html {
+    font-size: 62.5%; /*1rem = 10px*/
+}
+
 body {
     /*Ausencia de color es negro*/
     background-color: var(--color-primario);
@@ -57,7 +61,7 @@ body {
 
 .header__menu__link {
     text-decoration: none;/*quita el underline de los enlaces*/
-    font-size: 24px;
+    font-size: 2.4rem;
     font-weight: 700;
     color: var(--color-terciario);
     padding: 5px 10px;
@@ -83,7 +87,7 @@ body {
 }
 
 .presentacion__contenido__titulo {
-    font-size: 36px;
+    font-size: 3.6rem;
     font-family: var(--fuente-krona);
 }
 
@@ -92,7 +96,7 @@ body {
 }
 
 .presentacion__contenido__texto {
-    font-size: 24px;
+    font-size: 2.4rem;
     font-weight: 400;
 }
 
@@ -102,7 +106,7 @@ body {
 }
 
 .presentacion__contenido__texto--tamanio:hover {
-    font-size: 22px;
+    font-size: 2.2rem;
     font-weight: 700;
 }
 
@@ -117,7 +121,7 @@ body {
 
 .presentacion__enlaces__subtitulo {
     font-family: var(--fuente-krona);
-    font-size: 24px;/*Ya lo heredaba por el h2 del user agent (en Chrome)*/
+    font-size: 2.4rem;/*Ya lo heredaba por el h2 del user agent (en Chrome)*/
     font-weight: 400;/*En el figma aparece 'Regular'*/
 }
 
@@ -125,7 +129,7 @@ body {
     width: 60%;
     text-align: center;
     border-radius: 8px;
-    font-size: 24px;
+    font-size: 2.4rem;
     /*Grosor de la fuente*/
     font-weight: 600;/*Corresponde a SemiBold (semi-negrita) en Figma*/
     padding: 21.5px 0;/*No agregaremos relleno horizontal*/
@@ -149,7 +153,7 @@ body {
 
 .presentacion__figura__caption {
     text-align: center;
-    font-size: 16px;
+    font-size: 1.6rem;
     font-style: italic;
 }
 
@@ -158,6 +162,6 @@ body {
     padding: 23.64px;/*Tomamos el valor que había en Figma*/
     color: var(--color-primario);
     text-align: center;
-    font-size: 24px;
+    font-size: 2.4rem;
     font-weight: 400;
 }
