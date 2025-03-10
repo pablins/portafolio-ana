@@ -8,17 +8,19 @@ DECLARACIÓN VARIABLES
 :root {/*corresponde al alcance global*/
     /*Colores*/
     /*Podemos usar Color hunt" o cualquier sitio de paleta de colores para cambiar a nuestro gusto el sitio web solo modificando estas variables*/
-    /*PALETA COLOR 1*/
-    --color-primario: #000000;/*corresponde al color de fondo*/
-    --color-secundario: #F6F6F6;/*corresponde al color como blanco usado especialmente en los textos*/
-    --color-terciario: #22D4FD;/*Corresponde al color usado especialmente en los títulos*/
-    --color-hover: #272727;/*color usado en el hover de los enlaces a redes sociales*/
-
-    /*PALETA COLOR 2*/
+    /*PALETA COLOR LIGTH*/
     --color-primario: #FFF2F2;/*corresponde al color de fondo*/
     --color-secundario: #A9B5DF;/*corresponde al color como blanco usado especialmente en los textos*/
     --color-terciario: #7886C7;/*Corresponde al color usado especialmente en los títulos*/
     --color-hover: #2D336B;/*color usado en el hover de los enlaces a redes sociales*/
+
+
+    /*PALETA COLOR DARK*/
+    --color-primario: #000000;/*corresponde al color de fondo*/
+    --color-secundario: #F6F6F6;/*corresponde al color como blanco usado especialmente en los textos*/
+    --color-terciario: #22D4FD;/*Corresponde al color usado especialmente en los títulos*/
+    --color-hover: #272727;/*color usado en el hover de los enlaces a redes sociales*/
+  
 
     /*Fuentes tipográficas*/
     --fuente-montserrat: "Montserrat", sans-serif;
