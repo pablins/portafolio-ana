@@ -57,7 +57,7 @@ body {
     margin: 2% 15%;
 }
 
-.header__menu_container {
+.header__menu__container {
     display: flex;
     gap: 80px;
     list-style: none;/*quita las viñetas de los <li>*/
@@ -97,7 +97,7 @@ body {
     font-family: var(--fuente-krona);
 }
 
-.titulo-destacado {
+.presentacion__contenido__titulo--destacado {
     color: var(--color-terciario);
 }
 
@@ -182,7 +182,7 @@ STYLE VERSIÓN MOBILE
 /*Media Queries -> Se usará cuando el ancho del viewport sea igual o menor a 900px*/
 @media (max-width: 900px) {
 
-    .header__menu_container {
+    .header__menu__container {
         flex-wrap: wrap;
         justify-content: center;
         gap: 30px;
@@ -191,12 +191,16 @@ STYLE VERSIÓN MOBILE
     .presentacion {
         /*Ya tenemos un display: flex; y por default flex-direction está en fila (uno al lado del otro)*/
         flex-direction: column-reverse;/*Hacemos el reverse para que la imagen quede de primeras*/
-        padding: 4%;/*Al probar en herramientas de desarrollador observamos que al hacer pequeña la pantalla se exprimia el contenido entre los laterales (relleno/padding)*/
+        margin: 4%;/*Al probar en herramientas de desarrollador observamos que al hacer pequeña la pantalla se exprimia el contenido entre los laterales (relleno/padding)*/
     }
 
     .presentacion__contenido {
         /*el ancho del elemento se ajusta automáticamente al tamaño de su contenido. Esto significa que el elemento solo ocupará el espacio que necesita para mostrar su contenido, sin forzarse a llenar el 100% del ancho del elemento padre. Si el contenido es más pequeño, el elemento será más pequeño.*/
         width: auto;
+    }
+
+    .presentacion__enlaces__link {
+        width: 75%;
     }
 }
   
