@@ -57,7 +57,7 @@ body {
     margin: 2% 15%;
 }
 
-.header__menu_container {
+.header__menu__container {
     display: flex;
     gap: 80px;
     list-style: none;/*quita las viñetas de los <li>*/
@@ -97,7 +97,7 @@ body {
     font-family: var(--fuente-krona);
 }
 
-.titulo-destacado {
+.presentacion__contenido__titulo--destacado {
     color: var(--color-terciario);
 }
 
@@ -182,7 +182,7 @@ STYLE VERSIÓN MOBILE
 /*Media Queries -> Se usará cuando el ancho del viewport sea igual o menor a 900px*/
 @media (max-width: 900px) {
 
-    .header__menu_container {
+    .header__menu__container {
         flex-wrap: wrap;
         justify-content: center;
         gap: 30px;
