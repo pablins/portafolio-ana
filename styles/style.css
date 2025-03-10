@@ -36,6 +36,10 @@ html {
     font-size: 62.5%; /*1rem = 10px*/
 }
 
+/****************************************
+STYLE VERSIÓN DESKTOP
+*****************************************/
+
 body {
     /*Ausencia de color es negro*/
     background-color: var(--color-primario);
@@ -82,9 +86,9 @@ body {
 .presentacion__contenido {
     /*width: 615px;*//*esto lo obtenemos de Figma. Del Layout W*/
     width: 100%;/*dejamos un responsivo el width*/
-    /*Agregamos espacio vertical con gap de Flexbox*/
     display: flex;
     flex-direction: column;
+    /*Agregamos espacio vertical con gap de Flexbox*/
     gap: 40px;
 }
 
@@ -171,3 +175,28 @@ body {
     font-size: 2.4rem;
     font-weight: 400;
 }
+
+/****************************************
+STYLE VERSIÓN MOBILE
+*****************************************/
+/*Media Queries -> Se usará cuando el ancho del viewport sea igual o menor a 900px*/
+@media (max-width: 900px) {
+
+    .header__menu_container {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .presentacion {
+        /*Ya tenemos un display: flex; y por default flex-direction está en fila (uno al lado del otro)*/
+        flex-direction: column-reverse;/*Hacemos el reverse para que la imagen quede de primeras*/
+        padding: 4%;/*Al probar en herramientas de desarrollador observamos que al hacer pequeña la pantalla se exprimia el contenido entre los laterales (relleno/padding)*/
+    }
+
+    .presentacion__contenido {
+        /*el ancho del elemento se ajusta automáticamente al tamaño de su contenido. Esto significa que el elemento solo ocupará el espacio que necesita para mostrar su contenido, sin forzarse a llenar el 100% del ancho del elemento padre. Si el contenido es más pequeño, el elemento será más pequeño.*/
+        width: auto;
+    }
+}
+  
