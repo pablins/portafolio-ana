@@ -66,6 +66,11 @@ El sitio consta de las siguientes páginas:
 3. **Visualización en Dispositivos Móviles:**  
    Gracias a las media queries implementadas, el sitio se adapta a diferentes tamaños de pantalla.
 
+
+## Proyecto en Vercel
+
+Puedes ver el proyecto desplegado en **Vercel** (plataforma de alojamiento gratuita y rápida que permite que tu sitio sea accesible en internet) en la siguiente URL: [https://portafolio-ana-seven.vercel.app/](https://portafolio-ana-seven.vercel.app/)
+
 ## Posibles Mejoras
 
 - **Optimización de Variables CSS:**  
